@@ -1,0 +1,11 @@
+---
+release_version: latest
+mysql_root_password: PASS
+
+mysql_databases:
+  - oneadmin
+mysql_users:
+  oneadmin:
+    password: PASS
+    priv: "oneadmin.*:ALL"
+    host: localhost

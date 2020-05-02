@@ -1,0 +1,4 @@
+---
+- hosts: percona
+  roles:
+    - role: percona
