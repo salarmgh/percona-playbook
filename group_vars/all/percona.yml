@@ -3,9 +3,12 @@ release_version: latest
 mysql_root_password: PASS
 
 mysql_databases:
-  - oneadmin
+  - opennebula
 mysql_users:
   oneadmin:
     password: PASS
-    priv: "oneadmin.*:ALL"
+    priv: "opennebula.*:ALL"
     host: localhost
+
+isolation_level: READ-COMMITTED
+mysql_restart_handler_state: restarted
